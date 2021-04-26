@@ -14,16 +14,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column(nullable = false, length = 50, unique = true)
+    @Column(nullable = false, length = 500, unique = true)
     private String username;
 
-    @Column(length = 40)
+    @Column(length = 400)
     private String password;
 
-    @Column(length = 100, unique = true)
+    @Column(length = 500, unique = true)
     private String email;
 
-    @Column(length = 250)
+    @Column(length = 500)
     private String token;
 
     public User(int id, String username, String password, String email) {

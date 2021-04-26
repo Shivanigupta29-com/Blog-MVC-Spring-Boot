@@ -20,7 +20,7 @@ public class Post {
     private String title;
 
     @Lob
-    @Column(nullable = false, length = 300)
+    @Column(nullable = false, length = 500)
     private String body;
 
     @Column(nullable = false, name = "user_id")

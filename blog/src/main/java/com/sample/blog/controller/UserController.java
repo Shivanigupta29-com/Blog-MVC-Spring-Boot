@@ -12,6 +12,7 @@ import io.jsonwebtoken.Jws;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.SignatureException;
@@ -73,4 +74,5 @@ public class UserController {
                 UserResponse.builder().id(String.valueOf(user.getId())).username(user.getUsername()).token(user.getToken()).build()
         );
     }
+
 }
